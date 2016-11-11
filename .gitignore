@@ -116,7 +116,7 @@ UpgradeLog*.XML
 ############
 ## pycharm
 ############
-.idea
+.idea/
 
 ############
 ## Windows
