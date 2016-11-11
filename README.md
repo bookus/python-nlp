@@ -1,2 +1,21 @@
 # python-nlp
-create anew repository for nlp with python 
+### 用Python成熟的机器学习算法来实现NLP功能。
+
+使用的算法库包含但不限于：
+> Gensim、Scikit
+
+### 目前已实现功能：
+* 词推荐word2vec
+* 文本聚类
+* 文本分类
+
+采用Python上最流行的jieba分词器。
+
+另外目前还在阅读并注释**jieba**分词的代码，日后也会把分词加入进来。
+
+
+### 总结
+总的来说，这个项目只是一个开始。
+
+在github上创建仓库的意义并不在于怎么研究机器学习算法，
+而在于对NLP领域实际应用的探索。
