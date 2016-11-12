@@ -7,6 +7,8 @@
 # @Software: PyCharm
 
 from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfTransformer
+from sklearn.cluster import KMeans, MiniBatchKMeans
 
 vectorizer = CountVectorizer()
 corpus = [
@@ -33,12 +35,8 @@ corpus = [
 # ]
 X = vectorizer.fit_transform(corpus)
 
-from sklearn.feature_extraction.text import TfidfTransformer
-
 transformer = TfidfTransformer()
 tfidf = transformer.fit_transform(X)
-
-from sklearn.cluster import KMeans, MiniBatchKMeans
 
 km = KMeans(n_clusters=3, init='k-means++', max_iter=300, n_init=1,
             verbose=False)
